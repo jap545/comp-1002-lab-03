@@ -1,0 +1,90 @@
+<!--Japneet Singh-->
+<!--200513084-->
+<!--28 September,2022-->
+<!--Lab 03-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Form</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Contact Form</h1>
+            <p>Empower the art of contact data collection!</p>
+        </header>
+
+        <form action="thanks.html" method="post" name="my-first-form" netlify>
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" required maxlength="20" minlength="1" />
+                </p>
+
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" required maxlength="20" minlength="1" />
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="something@somemail.com" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="phone" maxlength="10" minlength="1" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Query</legend>
+                <p>Check all that apply:</p>
+
+                <ul>
+                    <li>
+                        <label for="careerOpportunity">Career Opportunity:</label>
+                        <input type="checkbox" name="careerOpportunity" id="careerOpportunity" />
+                    </li>
+
+                    <li>
+                        <label for="businessProposal">Business Proposal:</label>
+                        <input type="checkbox" name="businessProposal" id="businessProposal" />
+                    </li>
+
+                    <li>
+                        <label for="generalQuery">General Query:</label>
+                        <input type="checkbox" name="generalQuery" id="generalQuery" />
+                    </li>
+
+                    <li>
+                        <label for="complaint">Complaint:</label>
+                        <input type="checkbox" name="complaint" id="complaint" />
+                    </li>
+                </ul>
+                <p>
+                    <label for="message">Inquiries</label>
+                    <select name="message" id="message" required>
+                        <option value="general">General Inquiry</option>
+                        <option value="personal">Personal Inquiry</option>
+                    </select>
+                </p>
+
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Submit" />
+            </p>
+
+        </form>
+    </main>
+</body>
+
+</html>
